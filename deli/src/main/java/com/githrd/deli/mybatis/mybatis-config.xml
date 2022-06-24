@@ -22,13 +22,9 @@
 		<typeAlias alias="calculatorVO" type="com.githrd.deli.vo.calculatorVO"/>
 		<typeAlias alias="categoryVO" type="com.githrd.deli.vo.categoryVO"/>
 
-
-
-
 		<typeAlias alias="page" type="com.githrd.deli.util.PageUtil"/>
 		<typeAlias alias="file" type="com.githrd.deli.util.FileUtil"/>
 		<typeAlias alias="dbu" type="com.githrd.deli.util.DButil"/>
-		
 	</typeAliases>
 	
 	<mappers>
@@ -36,13 +32,8 @@
 		<mapper resource="com/githrd/deli/sql/PaySQL.xml"/>
 		<mapper resource="com/githrd/deli/sql/PcsSQL.xml"/>
 		<mapper resource="com/githrd/deli/sql/YonghyunSQL.xml"/>
-
-		
 		<mapper resource="com/githrd/deli/sql/memberSQL.xml"/>
 		<mapper resource="com/githrd/deli/sql/placeSQL.xml"/>
 		<mapper resource="com/githrd/deli/sql/categorySQL.xml"/>
-
 	</mappers>
-	
-
 </configuration>
