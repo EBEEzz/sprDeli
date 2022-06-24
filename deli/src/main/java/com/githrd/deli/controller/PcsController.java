@@ -58,7 +58,7 @@ public class PcsController {
 		memberLog.info(sid + " 님이 로그아웃 했습니다.");
 		
 		if(vw == null) {
-			vw = "/deli/";
+			vw = "/deli/main.dlv";
 		}
 		
 		if(nowPage != null) {
@@ -73,11 +73,17 @@ public class PcsController {
 	
 	// 글쓰기 폼
 	@RequestMapping("/boardWrite.dlv")
-	public ModelAndView boardWrite(ModelAndView mv) {
+	public ModelAndView boardWrite(ModelAndView mv, HttpSession session, RedirectView rv) {
+		String sid = (String) session.getAttribute("SID");
+		if(sid == null) {
+			rv.setUrl("/deli/member/login.dlv");
+			mv.setView(rv);
+			return mv;
+		}
 		mv.setViewName("member/boardWrite");		
 		return mv;
 	}
-	
+/*	
 	// 임시 회원정보 폼보기
 	@RequestMapping("/myInfo.dlv")
 	public ModelAndView infoForm(ModelAndView mv, HttpSession session, RedirectView rv) {
@@ -96,7 +102,7 @@ public class PcsController {
 		mv.setViewName("member/myInfo");
 		return mv;
 	}
-	
+*/	
 	// 회원가입 폼보기
 	@RequestMapping("/join.dlv")
 	public ModelAndView joinForm(ModelAndView mv, RedirectView rv, HttpSession session) {
@@ -154,8 +160,18 @@ public class PcsController {
 	
 	// 회원정보 수정 폼보기 함수
 	@RequestMapping("editInfo")
-	public ModelAndView editinfo(ModelAndView mv) {
+	public ModelAndView editinfo(ModelAndView mv, HttpSession session, RedirectView rv) {
+		String sid = (String) session.getAttribute("SID");
+		if(sid == null) {
+			rv.setUrl("/deli/member/login.dlv");
+			mv.setView(rv);
+			return mv;
+		}
+		
+		PcsVO PcVO = PcDao.getIdInfo(sid);
+		mv.addObject("DATA", PcVO);
 		mv.setViewName("/member/editInfo");
+		
 		return mv;
 	}
 	

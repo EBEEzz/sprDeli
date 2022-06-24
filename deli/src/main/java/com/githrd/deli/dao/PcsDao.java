@@ -30,6 +30,7 @@ public class PcsDao {
 	public int getLogin(PcsVO pcVO) {
 		return sqlSession.selectOne("pcSQL.login", pcVO);
 	}
+
 	// 아이디로 회원정보 조회 전담 처리
 	public PcsVO getIdInfo(String id) {
 		return sqlSession.selectOne("pcSQL.getIdInfo", id);
