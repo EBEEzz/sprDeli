@@ -18,6 +18,5 @@
 	<br>
 	<span id="error">${error}</span>
 </c:if>
-
 </body>
 </html>
