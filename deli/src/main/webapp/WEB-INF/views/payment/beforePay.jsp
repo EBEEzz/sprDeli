@@ -18,10 +18,10 @@
 <head>
 <meta charset="UTF-8">
 <title>BeforePay</title>
-<link rel="stylesheet" type="text/css" href="/deli/resources/css/user.css">
-<link rel="stylesheet" type="text/css" href="/deli/resources/css/w3.css">
-<script type="text/javascript" src="/deli/resources/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="/deli/resources/js/pay/pay.js?ver=7"></script>
+<link rel="stylesheet" type="text/css" href="/www/css/user.css">
+<link rel="stylesheet" type="text/css" href="/www/css/w3.css">
+<script type="text/javascript" src="/www/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/www/js/pay/pay.js?ver=7"></script>
 <!-- jQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 <!-- iamport.payment.js -->
