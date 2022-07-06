@@ -12,7 +12,7 @@
 	<beans:bean id="loginCheck" class="com.githrd.www.interceptor.LoginCheckInterceptor" />
 	 -->
 	
-	
+	 
 	<beans:bean id="loginRedirect" class="com.githrd.www.interceptor.PayLoginRedirectInterceptor" />
 	
 	<interceptors>

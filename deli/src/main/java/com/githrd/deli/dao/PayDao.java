@@ -34,7 +34,7 @@ public class PayDao {
 	public int insertOdm(java.util.Map map) {
 		return sqlSession.insert("paSQL.insertOdm", map);
 	}
-	
+	 
 	//	비용 조회 전담 처리 함수
 	public PayVO selPays(int bno) {
 		return sqlSession.selectOne("paSQL.selPays", bno);

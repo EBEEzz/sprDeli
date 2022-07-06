@@ -80,7 +80,7 @@ $(document).ready(function(){
 <c:if test="${SID eq memb.id}">
 				<h4>${SID} 님 금 액 : <span>${PO.myprice}</span></h4><br>
 </c:if>
-<c:if test="${SID ne memb.id && memb.id != null}">		
+<c:if test="${SID ne memb.id && memb.id != null}">
 				<h4>${memb.id} 님 금 액 : <span>${data.mprice}</span></h4><br>
 </c:if>
 </c:forEach>

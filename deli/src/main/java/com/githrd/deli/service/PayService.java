@@ -29,7 +29,7 @@ public class PayService {
 		// count += paDao.insertOdm("list", map);
 			
 		return count;
-	}
+	} 
 	/*
 	//	트랜잭션 적용 처리 작업 호출 함수
 	public boolean applyTx(PayVO paVO) {

@@ -40,7 +40,7 @@ public class PayController {
 		
 		String view = "/";
 		
-		
+		 
 		
 		return mv;
 	}

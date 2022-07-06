@@ -19,7 +19,7 @@
 			(SELECT NVL(MAX(olno) +1, 1) FROM orderlist),
 			#{ono}, #{rno}, #{oprice}, #{paym}, #{requests}
 		)
-		
+		 
 	</insert>
 	
 	<insert id="insertOdm" parameterType="java.util.Map">

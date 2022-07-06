@@ -46,7 +46,7 @@ public class PayVO {
 	public void setMenu(List<PayVO> menu) {
 		this.menu = menu;
 	}
-	public String getMembname() {
+	public String getMembname() { 
 		return membname;
 	}
 	public void setMembname(String membname) {
